@@ -1,0 +1,139 @@
+/*Universal box-sizing for all elements*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  font-family: "Cinzel Decorative", cursive;
+}
+
+/* TEMP Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px 0;
+  background-color: #f1f1f1;
+}
+
+.nav-item {
+  cursor: pointer;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.nav-item.active {
+  color: blue;
+}
+
+/* Main Section Styles */
+main {
+  padding: 20px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin: 0 auto;
+}
+
+.icon-list {
+  display: flex;
+  flex-direction: column; /* Column layout on big screens */
+  justify-content: center; /* Center the icons horizontally */
+  align-items: center; /* Center the icons vertically */
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 100%; /* Full width for icons */
+  max-width: 100px; /* Maximum width for icons */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space between icons */
+}
+
+.section-content {
+  padding: 10px;
+  margin-top: 50px;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  /* Large screens - flex container as row */
+  section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  aside {
+    margin-right: 100px;
+  }
+
+  .icon-list {
+    flex-direction: column; /* Row layout on big screens */
+    align-items: between; /* Align icons to the top */
+    margin-top: 30px;
+  }
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-links {
+  text-align: center;
+  margin: 10px;
+}
+
+.vertical-line {
+  width: 2px;
+  height: 60px; /* Adjust the height of the line */
+  background-color: #ccc;
+}
+
+@media (max-width: 767px) {
+  /* Small screens - flex container as column */
+  aside {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .icon-list {
+    flex-direction: row; /* Row layout on small screens */
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Center the icons vertically */
+    overflow-x: scroll; /* Add horizontal scroll for small screens */
+  }
+
+  .icon {
+    margin-right: 10px; /* Space between icons */
+    max-width: 50px;
+    margin-top: 20px;
+  }
+
+  .section-content {
+    margin-top: 10px;
+  }
+}
