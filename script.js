@@ -20,3 +20,5 @@ function showSection(sectionNumber) {
   
   // Show the default section (section 1)
   showSection(1);
+
+
