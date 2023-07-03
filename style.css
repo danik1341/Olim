@@ -14,15 +14,27 @@ html {
 .navbar {
   display: flex;
   justify-content: center;
+  align-items: stretch;
   list-style: none;
-  padding: 10px 0;
+  /* padding: 10px 0; */
   background-color: #f1f1f1;
+}
+
+#flag{
+  width:6vw;
+  max-width: 280px;
 }
 
 .nav-item {
   cursor: pointer;
-  margin: 0 10px;
   font-weight: bold;
+  /* font-size: large; */
+  text-align: center;
+  flex-grow: 1;
+  align-self: center;
+  background-color: #e7e7ff;
+  margin: 0 1px;
+  padding: 10px 0;
 }
 
 .nav-item.active {
@@ -134,6 +146,14 @@ footer {
 
 @media (max-width: 767px) {
   /* Small screens - flex container as column */
+  .navbar{
+    flex-wrap: wrap;
+  }
+  
+  #flag{
+    display: none;
+  }
+
   aside {
     margin-bottom: 10px;
     width: 100%;
