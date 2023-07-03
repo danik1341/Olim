@@ -43,8 +43,7 @@ section {
 aside {
   display: flex;
   flex-direction: column;
-  width: 45%;
-  margin: 0 auto;
+  width: 30%;
 }
 
 .icon-list {
@@ -81,7 +80,6 @@ aside {
 
   .icon-list {
     flex-direction: column; /* Row layout on big screens */
-    align-items: between; /* Align icons to the top */
     margin-top: 30px;
   }
 }
