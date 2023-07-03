@@ -150,10 +150,6 @@ footer {
     flex-wrap: wrap;
   }
   
-  #flag{
-    display: none;
-  }
-
   aside {
     margin-bottom: 10px;
     width: 100%;
@@ -180,3 +176,5 @@ footer {
     width: 100%;
   }
 }
+
+/* fixed the content formating and order, I have no clue as to why everything from finances onwards is underlined, also couldnt fix the shrinking flag, renamed the content folders to match their sections, the footer is still to tall and the vertical bar still breacks when the width is low, I suggest removing it, but you decide, also I think is a good idea to reduce the footer fontsize in mobile widths*/
