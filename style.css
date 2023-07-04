@@ -5,12 +5,13 @@
   padding: 0;
 }
 
+/* Font and general styling */
 body,
 html {
   font-family: "Cinzel Decorative", cursive;
 }
 
-/* TEMP Navbar Styles */
+/* Navbar Styles */
 .navbar {
   display: flex;
   justify-content: center;
@@ -64,17 +65,17 @@ aside h1 {
 
 .icon-list {
   display: flex;
-  flex-direction: column; /* Column layout on big screens */
-  justify-content: center; /* Center the icons horizontally */
-  align-items: center; /* Center the icons vertically */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 10px;
 }
 
 .icon {
-  width: 100%; /* Full width for icons */
-  max-width: 100px; /* Maximum width for icons */
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 10px; /* Space between icons */
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .section-content {
@@ -93,6 +94,7 @@ aside h1 {
   list-style-position: inside;
 }
 
+/* Home Page */
 .section-1 {
   text-align: center;
   padding: 50px;
@@ -126,6 +128,7 @@ aside h1 {
   margin: 0 10px;
 }
 
+/* Footer styles */
 footer {
   background-color: #87cefa;
   border-radius: 10px 10px 0px 0px;
@@ -151,7 +154,7 @@ footer {
 
 .vertical-line {
   width: 2px;
-  height: 60px; /* Adjust the height of the line */
+  height: 60px;
   background-color: #ccc;
 }
 
@@ -189,14 +192,14 @@ footer {
   }
 
   .icon-list {
-    flex-direction: row; /* Row layout on small screens */
-    justify-content: center; /* Center the icons horizontally */
-    align-items: center; /* Center the icons vertically */
-    overflow-x: scroll; /* Add horizontal scroll for small screens */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
   }
 
   .icon {
-    margin-right: 10px; /* Space between icons */
+    margin-right: 10px;
     max-width: 50px;
     margin-top: 20px;
   }
@@ -236,5 +239,3 @@ footer {
     height: 15%;
   }
 }
-
-/* fixed the content formating and order, I have no clue as to why everything from finances onwards is underlined, also couldnt fix the shrinking flag, renamed the content folders to match their sections, the footer is still to tall and the vertical bar still breacks when the width is low, I suggest removing it, but you decide, also I think is a good idea to reduce the footer fontsize in mobile widths*/
