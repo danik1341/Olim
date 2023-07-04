@@ -20,15 +20,14 @@ html {
   background-color: #f1f1f1;
 }
 
-#flag{
-  width:6vw;
+#flag {
+  width: 6vw;
   max-width: 280px;
 }
 
 .nav-item {
   cursor: pointer;
   font-weight: bold;
-  /* font-size: large; */
   text-align: center;
   flex-grow: 1;
   align-self: center;
@@ -94,6 +93,68 @@ aside h1 {
   list-style-position: inside;
 }
 
+.section-1 {
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-1 .content {
+  margin-bottom: 30px;
+}
+
+.section-1 h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.section-1 p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.section-1 .image-gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.section-1 .image-gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 10px;
+}
+
+footer {
+  background-color: #87cefa;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-links {
+  text-align: center;
+  margin: 10px;
+}
+
+.vertical-line {
+  width: 2px;
+  height: 60px; /* Adjust the height of the line */
+  background-color: #ccc;
+}
+
 /* Responsive Styles */
 @media (min-width: 768px) {
   /* Large screens - flex container as row */
@@ -116,40 +177,12 @@ aside h1 {
   }
 }
 
-footer {
-  background-color: #87cefa;
-  border-radius: 10px 10px 0px 0px;
-  padding: 20px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-
-.footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.social-links {
-  text-align: center;
-  margin: 10px;
-}
-
-.vertical-line {
-  width: 2px;
-  height: 60px; /* Adjust the height of the line */
-  background-color: #ccc;
-}
-
 @media (max-width: 767px) {
   /* Small screens - flex container as column */
-  .navbar{
+  .navbar {
     flex-wrap: wrap;
   }
-  
+
   aside {
     margin-bottom: 10px;
     width: 100%;
@@ -174,6 +207,33 @@ footer {
 
   .section-content p {
     width: 100%;
+  }
+
+  .section-1 {
+    padding: 30px;
+  }
+
+  .section-1 h1 {
+    font-size: 28px;
+  }
+
+  .section-1 p {
+    font-size: 16px;
+  }
+
+  .section-1 .image-gallery {
+    flex-wrap: wrap;
+  }
+
+  .section-1 .image-gallery img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+  }
+
+  footer {
+    font-size: 14px;
+    height: 15%;
   }
 }
 
