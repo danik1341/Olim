@@ -130,8 +130,6 @@ aside h1 {
 
 /* Footer styles */
 footer {
-  text-decoration: underline;
-  color: black;
   background-color: #87cefa;
   border-radius: 10px 10px 0px 0px;
   padding: 20px;
@@ -140,6 +138,12 @@ footer {
   left: 0;
   width: 100%;
   border: 1px solid black;
+}
+
+footer a {
+  text-decoration: underline;
+  color: black;
+  margin: 5px;
 }
 
 .footer-content {
